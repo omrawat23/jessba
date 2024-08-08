@@ -44,7 +44,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                 One more thing!
               </h3>
               <p className="text-center mb-6">
-                aor haan mei wo note nhi likhpaya kyunki mei ye bnane mei bussy tha but mei wo aaj pkke se likh lunga 🥺
+               aor han sowwry ba agar mei tumhe iss birthday week hype up nohi karpayo aor if tumhe lgging ki 21 hoing tum toh tumhe birthday feels not aaing but i promise ki tumhara koi sa bhi birthday without excitement nhi jayege from 21st to till i exist 🥺
               </p>
               <div className="flex gap-2">
                 <button

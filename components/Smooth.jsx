@@ -117,7 +117,7 @@ const ParallaxImages = () => {
         className="mx-auto w-2/3"
       />
       <ParallaxImg
-        src="/111111.jpg"
+        src="/111111.webp"
         alt="Orbiting satellite"
         start={-200}
         end={200}
