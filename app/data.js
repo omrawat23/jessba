@@ -1,21 +1,21 @@
 export const projects = [
     {
-      title: "Matthias Leidinger",
-      description: "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
+      title: "Dear aaloo!",
+      description: "Happieeeeee burthdayyy bebdu aise hi rehne ka kush kush jaise iss khilone mei tumne hawa bharri hai waise hi meri zindagi mei bhi tum hawa bharti rehna yeh hindi mei bohott cheesy lagra hai but aise hi cheerful cheerful rehne ka aor tumhare life ke saare problems aasan hojayenge tumhare saare goals aor ambitions poore hojayenge soon ba fir hum paris jayenge fir shaadi krenge fir honeymoon jayenge aor ek modern family jaisi family karenge (wink*wink)",
       src: "/45.gif",
       link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
       color: "#BBACAF"
     },
     {
-      title: "Clément Chapillon",
-      description: "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for ‘The tawny rocks’).",
+      title: "poorani photuwa",
+      description: "Yeh tumhari 18th birthday ki photu mene kahi tijori se nikali and i likey likey isme dekho tumhare baal bhi lambe hai aor iss time tak mei tumhari zindagi mei nhi aaya tha isiliye isme tum poora smile nhi krring (ehehe) but isme bhi tum proper jessica lgging jaisi tum abhi lgti ho to i likey likey this green apple photo agar mujhe ye apple roz khaane ko milega to mujhe to kbhi doctor ke jaana hi nhi pdega toh soon ba hum saath rhenge aor fun krenge yayyyyy!",
       src: "/8.jpeg",
       link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
       color: "#977F6D"
     },
     {
-      title: "Zissou",
-      description: "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal, they’re encoded with an ambiguity—a certain tension—that lets the viewer find their own story within them.",
+      title: "deku",
+      description: "Iss photo ka koi point nhi hai but ye tumne mujhe ek baar bheji thi aor mujhe yeh cute lggi isiliye ye yha hai aor fir mene socha hum aisa ek kutta bhi rakhenge aor usse yoga aor kung fu krayenge aor iska naam yaar please deku rakhte hai pessu nhi (crying emoji) toh han hum pet rakhenge aor fir hum shaolin temple par jaakr kung fu seekhenge ye meri life ka side quest tha bachpan se ",
       src: "/123.jpg",
       link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
       color: "#C2491D"

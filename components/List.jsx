@@ -7,28 +7,17 @@ export const VanishList = () => {
   const [todos, setTodos] = useState([
     {
       id: 1,
-      text: "Take out trash",
+      text: "Call me!",
       checked: false,
       time: "5 mins",
     },
     {
-      id: 2,
-      text: "Do laundry",
-      checked: false,
-      time: "10 mins",
-    },
-    {
       id: 3,
-      text: "Have existential crisis",
+      text: "See this website",
       checked: true,
       time: "12 hrs",
     },
-    {
-      id: 4,
-      text: "Get dog food",
-      checked: false,
-      time: "1 hrs",
-    },
+
   ]);
 
   const handleCheck = (id) => {

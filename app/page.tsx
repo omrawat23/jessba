@@ -119,6 +119,11 @@ export default function Home() {
 
         {/* <Why/> */}
         <main className="py-8 mb-[200px]">
+        <div className="text-center mb-6">
+    <h1 className="text-3xl font-bold text-gray-500">Jessba through the years...</h1>
+  </div>
+
+          
           <motion.div
             className="absolute left-0 flex gap-4"
             style={{ x: xTranslation }}

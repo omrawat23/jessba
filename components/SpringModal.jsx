@@ -10,7 +10,7 @@ const ExampleWrapper = () => {
         onClick={() => setIsOpen(true)}
         className="bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-medium px-4 py-2 rounded hover:opacity-90 transition-opacity"
       >
-        Open Modal
+        Open me 🎁
       </button>
       <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
@@ -44,21 +44,20 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                 One more thing!
               </h3>
               <p className="text-center mb-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                aperiam vitae, sapiente ducimus eveniet in velit.
+                aor haan mei wo note nhi likhpaya kyunki mei ye bnane mei bussy tha but mei wo aaj pkke se likh lunga 🥺
               </p>
               <div className="flex gap-2">
                 <button
                   onClick={() => setIsOpen(false)}
                   className="bg-transparent hover:bg-white/10 transition-colors text-white font-semibold w-full py-2 rounded"
                 >
-                  Nah, go back
+                 I loffuuuuu moreee...
                 </button>
                 <button
                   onClick={() => setIsOpen(false)}
                   className="bg-white hover:opacity-90 transition-opacity text-indigo-600 font-semibold w-full py-2 rounded"
                 >
-                  Understood!
+                 I loffu youu!
                 </button>
               </div>
             </div>
