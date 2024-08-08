@@ -110,7 +110,7 @@ const ParallaxImages = () => {
         className="w-1/3"
       />
       <ParallaxImg
-        src="/100.jpg"
+        src="/101.jpg"
         alt="An example of a space launch"
         start={200}
         end={-250}
