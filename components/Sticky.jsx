@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useCallback } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -16,13 +16,12 @@ const Sticky = () => {
   const cardsRef = useRef([]);
   const headerRef = useRef(null);
   const animation = useRef(null);
-  let cardHeight = 0;
 
-  const initCards = () => {
+  const initCards = useCallback(() => {
     if (animation.current) {
       animation.current.clear();
     }
-    cardHeight = cardsRef.current[0]?.offsetHeight || 0;
+    const cardHeight = cardsRef.current[0]?.offsetHeight || 0;
 
     cardsRef.current.forEach((card, index) => {
       if (index > 0) {
@@ -32,7 +31,7 @@ const Sticky = () => {
         animation.current.to(card, { y: 0, duration: index * 0.5, ease: "none" }, 0);
       }
     });
-  };
+  }, []); // No dependencies because it relies on refs, which are stable
 
   useEffect(() => {
     animation.current = gsap.timeline();
@@ -43,7 +42,7 @@ const Sticky = () => {
       trigger: ".wrapper",
       start: "top top",
       pin: true,
-      end: () => `+=${(cardsRef.current.length * cardHeight) + headerRef.current.offsetHeight}`,
+      end: () => `+=${(cardsRef.current.length * (cardsRef.current[0]?.offsetHeight || 0)) + headerRef.current.offsetHeight}`,
       scrub: true,
       animation: animation.current,
       markers: true,
@@ -57,7 +56,7 @@ const Sticky = () => {
       scrollTrigger.kill();
       ScrollTrigger.removeEventListener("refreshInit", initCards);
     };
-  }, []);
+  }, [initCards]); // initCards is now stable, so it’s safe to include as a dependency
 
   return (
     <div className="wrapper">

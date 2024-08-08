@@ -210,7 +210,7 @@ const Todo = ({ removeElement, handleCheck, id, children, checked, time }) => {
             duration: 0.125,
           }
         );
-
+  
         await animate(
           scope.current,
           {
@@ -223,10 +223,11 @@ const Todo = ({ removeElement, handleCheck, id, children, checked, time }) => {
         );
         safeToRemove();
       };
-
+  
       exitAnimation();
     }
-  }, [isPresent]);
+  }, [isPresent, animate, checked, safeToRemove, scope]);
+  
 
   return (
     <motion.div

@@ -1,6 +1,6 @@
 "use client";
 import { TextParallaxContentExample } from '../components/Text';
-import Barpoll from '@/components/BarPoll';
+
 import { useScroll } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 import styles from '../app/components/sticky/style.module.scss';
@@ -56,7 +56,7 @@ export default function Home() {
   useEffect(() => {
     let controls;
     let finalPosition = -width / 2 - 8;
-
+  
     if (mustFinish) {
       controls = animate(xTranslation, [xTranslation.get(), finalPosition], {
         ease: "linear",
@@ -75,9 +75,10 @@ export default function Home() {
         repeatDelay: 0,
       });
     }
-
+  
     return () => controls?.stop();
-  }, [rerender, xTranslation, duration, width]);
+  }, [rerender, xTranslation, duration, width, mustFinish]);
+  
 
   useEffect(() => {
     const lenis = new Lenis();
