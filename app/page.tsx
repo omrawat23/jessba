@@ -1,5 +1,6 @@
 "use client";
 import { TextParallaxContentExample } from '../components/Text';
+
 import { useScroll } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 import styles from '../app/components/sticky/style.module.scss';
@@ -22,6 +23,7 @@ import Section from "../components/Section";
 import Why from "../app/components/scroll/index";
 import { VanishList } from '../components/List';
 import {SmoothScrollHero} from "../components/Smooth";
+// import Front from "../components/Front";
 
 export default function Home() {
   const container = useRef(null);
@@ -89,10 +91,12 @@ export default function Home() {
 
   return (
     <>
-      <main className="px-4 py-8 sm:px-8 md:px-16 lg:px-24">
-        <SmoothScrollHero />
-      </main>
-      <main ref={container} className={`${styles.main} px-4 py-8 sm:px-8 md:px-16 lg:px-24`}>
+        <main>
+
+        <SmoothScrollHero/>
+
+</main>
+      <main ref={container} className={styles.main}>
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;
           return (
@@ -107,9 +111,14 @@ export default function Home() {
           );
         })}
       </main>
-      <div className="py-8 mb-[200px] sm:px-4 md:px-8 lg:px-16">
+      <div>
+        {/* <Barpoll /> */}
+        {/* <Animate /> */}
         <Zoom />
-        <main className="relative flex gap-4">
+        {/* <Example /> */}
+
+        {/* <Why/> */}
+        <main className="py-8 mb-[200px]">
           <motion.div
             className="absolute left-0 flex gap-4"
             style={{ x: xTranslation }}
@@ -128,8 +137,11 @@ export default function Home() {
             ))}
           </motion.div>
         </main>
-        <div  className="px-4 sm:px-8 md:px-16 lg:px-24" ><Carousel/></div>
+        {/* <TextParallaxContentExample /> */}
+        <Carousel />
         <ExampleWrapper />
+        {/* <Front /> */}
+        {/* <Sticky /> */}
         <div>
           <VanishList />
         </div>
