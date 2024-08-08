@@ -1,6 +1,5 @@
 "use client";
 import { TextParallaxContentExample } from '../components/Text';
-
 import { useScroll } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 import styles from '../app/components/sticky/style.module.scss';
@@ -23,7 +22,6 @@ import Section from "../components/Section";
 import Why from "../app/components/scroll/index";
 import { VanishList } from '../components/List';
 import {SmoothScrollHero} from "../components/Smooth";
-// import Front from "../components/Front";
 
 export default function Home() {
   const container = useRef(null);
@@ -91,20 +89,10 @@ export default function Home() {
 
   return (
     <>
-        <main>
-
-        <SmoothScrollHero/>
-
-{/* <Intro />
-
-<Description />
-
-<Section/> */}
-
-{/* <div className='h-screen'></div> */}
-
-</main>
-      <main ref={container} className={styles.main}>
+      <main className="px-4 py-8 sm:px-8 md:px-16 lg:px-24">
+        <SmoothScrollHero />
+      </main>
+      <main ref={container} className={`${styles.main} px-4 py-8 sm:px-8 md:px-16 lg:px-24`}>
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;
           return (
@@ -119,14 +107,9 @@ export default function Home() {
           );
         })}
       </main>
-      <div>
-        {/* <Barpoll /> */}
-        {/* <Animate /> */}
+      <div className="py-8 mb-[200px] sm:px-4 md:px-8 lg:px-16">
         <Zoom />
-        {/* <Example /> */}
-
-        {/* <Why/> */}
-        <main className="py-8 mb-[200px]">
+        <main className="relative flex gap-4">
           <motion.div
             className="absolute left-0 flex gap-4"
             style={{ x: xTranslation }}
@@ -145,11 +128,8 @@ export default function Home() {
             ))}
           </motion.div>
         </main>
-        {/* <TextParallaxContentExample /> */}
-        <Carousel />
+        <div  className="px-4 sm:px-8 md:px-16 lg:px-24" ><Carousel/></div>
         <ExampleWrapper />
-        {/* <Front /> */}
-        {/* <Sticky /> */}
         <div>
           <VanishList />
         </div>

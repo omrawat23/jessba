@@ -6,6 +6,7 @@ import { useTransform, useScroll, motion } from 'framer-motion';
 import { useRef } from 'react';
 
 const Cards = ({ i, title, description, src, color, progress, range, targetScale }) => {
+  
   const container = useRef(null);
   const scale = useTransform(progress, range, [1, targetScale]);
 
