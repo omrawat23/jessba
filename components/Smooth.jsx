@@ -65,7 +65,7 @@ const Hero = () => {
 };
 
 const CenterImage = () => {
-    const backgroundImageURL = "/8.jpeg";
+    const backgroundImageURL = "/100.jpg";
   const { scrollY } = useScroll();
 
   const clip1 = useTransform(scrollY, [0, 1500], [25, 0]);
