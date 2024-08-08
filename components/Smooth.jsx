@@ -65,7 +65,7 @@ const Hero = () => {
 };
 
 const CenterImage = () => {
-    const backgroundImageURL = "/100.jpg";
+    const backgroundImageURL = "/8.jpeg";
   const { scrollY } = useScroll();
 
   const clip1 = useTransform(scrollY, [0, 1500], [25, 0]);
@@ -110,14 +110,14 @@ const ParallaxImages = () => {
         className="w-1/3"
       />
       <ParallaxImg
-        src="/30.jpg"
+        src="/100.jpg"
         alt="An example of a space launch"
         start={200}
         end={-250}
         className="mx-auto w-2/3"
       />
       <ParallaxImg
-        src="/33.jpg"
+        src="/111111.jpg"
         alt="Orbiting satellite"
         start={-200}
         end={200}
@@ -174,6 +174,7 @@ const Schedule = () => {
         Happy Birthday Jessica 🥳
       </motion.h1>
       <ScheduleItem title="you're my sunshine my only sunshine you make me happy when skies are grey" date="Aug 9th" location="Florida" />
+
     </section>
   );
 };
